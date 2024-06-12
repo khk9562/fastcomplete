@@ -100,3 +100,16 @@ async def test_get_comments_on_post_empty(
 
     assert response.status_code == 200
     assert response.json() == []
+
+
+@pytest.mark.anyio_backend
+async def test_get_post_with_comments(
+    async_client: AsyncClient, created_post: dict, created_comment: dict
+):
+    response = await async_client.get(f"/post/{created_post['id']}")
+
+    assert response.status_code == 200
+    assert response.json() == {
+        "post": create_post,
+        "comments": [created_comment],
+    }
