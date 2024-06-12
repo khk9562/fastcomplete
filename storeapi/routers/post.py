@@ -17,7 +17,7 @@ def find_post(post_id: int):
     return post_table.get(post_id)
 
 
-@router.post("/post", response_model=UserPost)
+@router.post("/post", response_model=UserPost, tags=["posts"])
 async def create_post(post: UserPostIn):
     data = post.dict()
     last_record_id = len(post_table)
@@ -26,12 +26,12 @@ async def create_post(post: UserPostIn):
     return new_post
 
 
-@router.get("/post", response_model=list[UserPost])
+@router.get("/post", response_model=list[UserPost], tags=["posts"])
 async def get_all_posts():
     return list(post_table.values())
 
 
-@router.post("/comment", response_model=Comment, status_code=201)
+@router.post("/comment", response_model=Comment, status_code=201, tags=["posts"])
 async def create_comment(comment: CommentIn):
     post = find_post(comment.post_id)
     if not post:
@@ -44,14 +44,14 @@ async def create_comment(comment: CommentIn):
     return new_comment
 
 
-@router.get("/post/{post_id}/comment", response_model=list[Comment])
+@router.get("/post/{post_id}/comment", response_model=list[Comment], tags=["posts"])
 async def get_comments_on_post(post_id: int):
     return [
         comment for comment in comment_table.values() if comment["post_id"] == post_id
     ]
 
 
-@router.get("/post/{post_id}", response_model=UserPostWithComments)
+@router.get("/post/{post_id}", response_model=UserPostWithComments, tags=["posts"])
 async def get_post_with_comments(post_id: int):
     post = find_post(post_id)
     if not post:
