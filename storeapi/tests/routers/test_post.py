@@ -80,3 +80,23 @@ async def test_create_comment(async_client: AsyncClient, created_post: dict):
     }.items() <= response.json().items()
 
     # items() 메서드는 딕셔너리의 키-값 쌍을 튜플 형태로 반환합니다.
+
+
+@pytest.mark.anyio_backend
+async def test_get_comments_on_post(
+    async_client: AsyncClient, created_post: dict, created_comment: dict
+):
+    response = await async_client.get(f"/post/{created_post['id']}/comment")
+
+    assert response.status_code == 200
+    assert response.json() == [created_comment]
+
+
+@pytest.mark.anyio_backend
+async def test_get_comments_on_post_empty(
+    async_client: AsyncClient, created_post: dict
+):
+    response = await async_client.get(f"/post/{created_post['id']}/comment")
+
+    assert response.status_code == 200
+    assert response.json() == []
