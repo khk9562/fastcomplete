@@ -31,7 +31,6 @@ async def get_all_posts():
     return list(post_table.values())
 
 
-# 나는 포스트맨 테스트 할 때 주소가 /posts/comment로 되는데 왜 강의에선 /comment로 되는지 모르겠다.
 @router.post("/comment", response_model=Comment, status_code=201)
 async def create_comment(comment: CommentIn):
     post = find_post(comment.post_id)
@@ -45,7 +44,6 @@ async def create_comment(comment: CommentIn):
     return new_comment
 
 
-# 이것도 /posts/post/comment인데 왜 강의에선 /post/comment 로 됨?
 @router.get("/post/{post_id}/comment", response_model=list[Comment])
 async def get_comments_on_post(post_id: int):
     return [
