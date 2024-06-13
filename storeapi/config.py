@@ -1,7 +1,7 @@
 from functools import lru_cache
 from typing import Optional
 
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
 
 
 class BaseConfig(BaseSettings):
@@ -9,26 +9,32 @@ class BaseConfig(BaseSettings):
 
     class Config:
         env_file: str = ".env"
+        extra = "allow"
 
 
 class GlobalConfig(BaseConfig):
-    DATABSE_URL: Optional[str] = None
+    DATABASE_URL: Optional[str] = None
     DB_FORCE_ROLL_BACK: bool = False
 
 
 class DevConfig(BaseConfig):
+    DATABASE_URL: Optional[str] = None
+    DB_FORCE_ROLL_BACK: bool = False
+
     class Config:
-        # .env file we're going to prefix all the variables which are these two for now with dev underscore and then that's going to populate those environment variables if we use dev config.
         env_prefix = "DEV_"
 
 
 class ProdConfig(BaseConfig):
+    DATABASE_URL: Optional[str] = None
+    DB_FORCE_ROLL_BACK: bool = False
+
     class Config:
         env_prefix = "PROD_"
 
 
 class TestConfig(BaseConfig):
-    DATABSE_URL: Optional[str] = "sqlite:///./test.db"
+    DATABASE_URL: Optional[str] = "sqlite:///test.db"
     DB_FORCE_ROLL_BACK: bool = True
 
     class Config:
