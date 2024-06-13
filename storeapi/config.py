@@ -17,23 +17,17 @@ class GlobalConfig(BaseConfig):
     DB_FORCE_ROLL_BACK: bool = False
 
 
-class DevConfig(BaseConfig):
-    DATABASE_URL: Optional[str] = None
-    DB_FORCE_ROLL_BACK: bool = False
-
+class DevConfig(GlobalConfig):
     class Config:
         env_prefix = "DEV_"
 
 
-class ProdConfig(BaseConfig):
-    DATABASE_URL: Optional[str] = None
-    DB_FORCE_ROLL_BACK: bool = False
-
+class ProdConfig(GlobalConfig):
     class Config:
         env_prefix = "PROD_"
 
 
-class TestConfig(BaseConfig):
+class TestConfig(GlobalConfig):
     DATABASE_URL: Optional[str] = "sqlite:///test.db"
     DB_FORCE_ROLL_BACK: bool = True
 
