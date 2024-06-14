@@ -314,3 +314,13 @@ uvicorn.error:92 - Finished server process [75561]
 (-) uvicorn.error:62 - Application startup complete.
 (59f8f731) uvicorn.access:466 - 127.0.0.1:58726 - "GET /post HTTP/1.1" 200
 (af5f9b6a) uvicorn.access:466 - 127.0.0.1:58726 - "GET /post HTTP/1.1" 200
+(-) uvicorn.error:258 - Shutting down
+(-) uvicorn.error:67 - Waiting for application shutdown.
+(-) uvicorn.error:76 - Application shutdown complete.
+(-) uvicorn.error:92 - Finished server process [75729]
+(-) uvicorn.error:62 - Application startup complete.
+(-) uvicorn.error:258 - Shutting down
+(-) uvicorn.error:67 - Waiting for application shutdown.
+(-) uvicorn.error:76 - Application shutdown complete.
+(-) uvicorn.error:92 - Finished server process [76158]
+(-) uvicorn.error:62 - Application startup complete.
