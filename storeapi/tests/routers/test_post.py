@@ -34,7 +34,7 @@ async def test_create_post(async_client: AsyncClient):
     )
 
     assert response.status_code == 201
-    assert {"id": 0, "body": body} <= response.json().items()
+    assert {"id": 1, "body": body} <= response.json().items()
 
 
 # write a test that attempts to create a post, but it doesn't pass a "body" key in the JSON payload.

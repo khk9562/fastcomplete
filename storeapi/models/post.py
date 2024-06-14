@@ -6,7 +6,13 @@ class UserPostIn(BaseModel):
 
 
 class UserPost(UserPostIn):
+    # model_config: ConfigDict(from_attributes=True)
     id: int
+
+    class config:
+        orm_mode = (
+            True  # return_value["body"] but when it fails, it will return_value.body
+        )
 
 
 class CommentIn(BaseModel):
