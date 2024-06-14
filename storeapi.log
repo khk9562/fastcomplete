@@ -212,3 +212,23 @@ uvicorn.error:67 - Waiting for application shutdown.
 uvicorn.error:76 - Application shutdown complete.
 uvicorn.error:92 - Finished server process [74557]
 uvicorn.error:62 - Application startup complete.
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [74572]
+uvicorn.error:62 - Application startup complete.
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [74633]
+uvicorn.error:62 - Application startup complete.
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [74794]
+uvicorn.error:62 - Application startup complete.
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [74844]
+uvicorn.error:62 - Application startup complete.
