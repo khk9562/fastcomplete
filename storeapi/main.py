@@ -14,6 +14,9 @@ logger = logging.getLogger(__name__)
 async def lifespan(app: FastAPI):
     configure_logging()
     logger.info("Hello world")
+    logger.info("Hello world")
+    logger.info("Hello world")
+    logger.info("Hello world")
     # this function can run this
     await database.connect()
     #  and then it stops running until fastAPI tells it to continue and then it runs that.

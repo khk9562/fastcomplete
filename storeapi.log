@@ -1,0 +1,159 @@
+uvicorn.error:62 - Application startup complete.
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [71661]
+uvicorn.error:62 - Application startup complete.
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [71730]
+uvicorn.error:62 - Application startup complete.
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [71811]
+uvicorn.error:62 - Application startup complete.
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [71854]
+uvicorn.error:62 - Application startup complete.
+uvicorn.access:466 - 127.0.0.1:53375 - "GET /post HTTP/1.1" 200
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [71872]
+uvicorn.error:62 - Application startup complete.
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [71951]
+uvicorn.error:62 - Application startup complete.
+uvicorn.access:466 - 127.0.0.1:53389 - "GET /post HTTP/1.1" 200
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [71971]
+uvicorn.error:62 - Application startup complete.
+uvicorn.access:466 - 127.0.0.1:53394 - "GET /post HTTP/1.1" 200
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [71995]
+uvicorn.error:62 - Application startup complete.
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [72014]
+uvicorn.error:62 - Application startup complete.
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [72104]
+uvicorn.error:62 - Application startup complete.
+uvicorn.access:466 - 127.0.0.1:53416 - "GET /post/0/comment HTTP/1.1" 200
+uvicorn.access:466 - 127.0.0.1:53417 - "GET /post/0 HTTP/1.1" 500
+uvicorn.error:404 - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 399, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 70, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fastapi/routing.py", line 296, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fastapi/routing.py", line 155, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 'post'), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': <coroutine object find_post at 0x1114c9be0>}
+
+uvicorn.access:466 - 127.0.0.1:53420 - "GET /post/0/comment HTTP/1.1" 200
+uvicorn.access:466 - 127.0.0.1:53422 - "GET /post/1 HTTP/1.1" 500
+uvicorn.error:404 - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 399, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 70, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fastapi/routing.py", line 296, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fastapi/routing.py", line 155, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 'post'), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': <coroutine object find_post at 0x11172be00>}
+
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [72131]
+uvicorn.error:62 - Application startup complete.
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [72211]
+uvicorn.error:62 - Application startup complete.
+uvicorn.access:466 - 127.0.0.1:53451 - "GET /post/1 HTTP/1.1" 404
