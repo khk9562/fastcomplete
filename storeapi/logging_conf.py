@@ -1,6 +1,6 @@
 from logging.config import dictConfig
 
-from storeapi.config import Devconfig, config
+from storeapi.config import DevConfig, config
 
 
 def configure_logging() -> None:
@@ -17,7 +17,8 @@ def configure_logging() -> None:
             },
             "handlers": {
                 "default": {
-                    "class": "logging.StreamHandler",
+                    # "class": "logging.StreamHandler",
+                    "class": "rich.logging.RichHandler",
                     "level": "DEBUG",
                     "formatter": "console",
                 }
@@ -25,7 +26,8 @@ def configure_logging() -> None:
             "loggers": {
                 "storeapi": {
                     "handlers": ["default"],
-                    "level": "DEBUG" if isinstance(config, Devconfig) else "INFO",
+                    "level": "DEBUG" if isinstance(config, DevConfig) else "INFO",
+                    "propagate": False,
                 }
             },
         }
