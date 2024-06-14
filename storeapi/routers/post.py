@@ -57,7 +57,6 @@ async def create_comment(comment: CommentIn):
 
     post = await find_post(comment.post_id)
     if not post:
-        logger.error(f"Post with id {comment.post_id} not found")
         raise HTTPException(status_code=404, detail="Post not found")
 
     data = comment.dict()
@@ -80,7 +79,7 @@ async def get_comments_on_post(post_id: int):
     logger.info("Getting comments on post")
     query = comment_table.select().where(comment_table.c.post_id == post_id)
     logger.debug(query)
-    return await database.fetch_all(query)  # return_value["body"]
+    return await database.fetch_all(query)
     # return [
     #     comment for comment in comment_table.values() if comment["post_id"] == post_id
     # ]
@@ -91,7 +90,6 @@ async def get_post_with_comments(post_id: int):
     logger.info("Getting post and its comments")
     post = await find_post(post_id)
     if not post:
-        logger.error(f"Post with post id {post_id} not found")
         raise HTTPException(status_code=404, detail="Post not found")
     return {
         "post": post,
