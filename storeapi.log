@@ -324,3 +324,74 @@ uvicorn.error:92 - Finished server process [75561]
 (-) uvicorn.error:76 - Application shutdown complete.
 (-) uvicorn.error:92 - Finished server process [76158]
 (-) uvicorn.error:62 - Application startup complete.
+(b9232ff7) uvicorn.access:466 - 127.0.0.1:58802 - "GET /post HTTP/1.1" 200
+(-) uvicorn.error:258 - Shutting down
+(-) uvicorn.error:67 - Waiting for application shutdown.
+(-) uvicorn.error:76 - Application shutdown complete.
+(-) uvicorn.error:92 - Finished server process [76180]
+(-) uvicorn.error:62 - Application startup complete.
+(-) uvicorn.error:258 - Shutting down
+(-) uvicorn.error:67 - Waiting for application shutdown.
+(-) uvicorn.error:76 - Application shutdown complete.
+(-) uvicorn.error:92 - Finished server process [76237]
+(-) uvicorn.error:62 - Application startup complete.
+(00953f90) uvicorn.access:466 - 127.0.0.1:58816 - "GET / HTTP/1.1" 404
+(a2ff5223) uvicorn.access:466 - 127.0.0.1:58816 - "GET /docs HTTP/1.1" 200
+(bf51a3e1) uvicorn.access:466 - 127.0.0.1:58816 - "GET /openapi.json HTTP/1.1" 200
+(34dc3f33) uvicorn.access:466 - 127.0.0.1:58820 - "POST /post HTTP/1.1" 200
+(4e8c85ff) uvicorn.access:466 - 127.0.0.1:58821 - "POST /comment HTTP/1.1" 404
+(7fd032ce) uvicorn.access:466 - 127.0.0.1:58821 - "POST /comment HTTP/1.1" 201
+(81b1ff39) uvicorn.access:466 - 127.0.0.1:58821 - "POST /comment HTTP/1.1" 201
+(c940e577) uvicorn.access:466 - 127.0.0.1:58823 - "GET /post/4/comment HTTP/1.1" 200
+(7da3bf91) uvicorn.access:466 - 127.0.0.1:58826 - "GET /post/4 HTTP/1.1" 200
+(6ac5d38a) uvicorn.access:466 - 127.0.0.1:58827 - "GET /post HTTP/1.1" 200
+(-) uvicorn.error:258 - Shutting down
+(-) uvicorn.error:67 - Waiting for application shutdown.
+(-) uvicorn.error:76 - Application shutdown complete.
+(-) uvicorn.error:92 - Finished server process [76256]
+(-) uvicorn.error:62 - Application startup complete.
+(-) uvicorn.error:258 - Shutting down
+(-) uvicorn.error:67 - Waiting for application shutdown.
+(-) uvicorn.error:76 - Application shutdown complete.
+(-) uvicorn.error:92 - Finished server process [76399]
+(-) uvicorn.error:62 - Application startup complete.
+(-) uvicorn.error:258 - Shutting down
+(-) uvicorn.error:67 - Waiting for application shutdown.
+(-) uvicorn.error:76 - Application shutdown complete.
+(-) uvicorn.error:92 - Finished server process [76412]
+(-) uvicorn.error:62 - Application startup complete.
+(-) uvicorn.error:258 - Shutting down
+(-) uvicorn.error:67 - Waiting for application shutdown.
+(-) uvicorn.error:76 - Application shutdown complete.
+(-) uvicorn.error:92 - Finished server process [76424]
+(-) uvicorn.error:62 - Application startup complete.
+(-) uvicorn.error:258 - Shutting down
+(-) uvicorn.error:67 - Waiting for application shutdown.
+(-) uvicorn.error:76 - Application shutdown complete.
+(-) uvicorn.error:92 - Finished server process [76658]
+(-) uvicorn.error:62 - Application startup complete.
+(-) uvicorn.error:258 - Shutting down
+(-) uvicorn.error:67 - Waiting for application shutdown.
+(-) uvicorn.error:76 - Application shutdown complete.
+(-) uvicorn.error:92 - Finished server process [76834]
+(-) uvicorn.error:62 - Application startup complete.
+(-) uvicorn.error:258 - Shutting down
+(-) uvicorn.error:67 - Waiting for application shutdown.
+(-) uvicorn.error:76 - Application shutdown complete.
+(-) uvicorn.error:92 - Finished server process [76852]
+(-) uvicorn.error:62 - Application startup complete.
+(-) uvicorn.error:258 - Shutting down
+(-) uvicorn.error:67 - Waiting for application shutdown.
+(-) uvicorn.error:76 - Application shutdown complete.
+(-) uvicorn.error:92 - Finished server process [76863]
+(-) uvicorn.error:62 - Application startup complete.
+(-) uvicorn.error:258 - Shutting down
+(-) uvicorn.error:67 - Waiting for application shutdown.
+(-) uvicorn.error:76 - Application shutdown complete.
+(-) uvicorn.error:92 - Finished server process [76921]
+(-) uvicorn.error:62 - Application startup complete.
+(-) uvicorn.error:258 - Shutting down
+(-) uvicorn.error:67 - Waiting for application shutdown.
+(-) uvicorn.error:76 - Application shutdown complete.
+(-) uvicorn.error:92 - Finished server process [76938]
+(-) uvicorn.error:62 - Application startup complete.

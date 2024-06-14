@@ -22,9 +22,10 @@ def configure_logging() -> None:
                     "format": "(%(correlation_id)s) %(name)s:%(lineno)d - %(message)s",
                 },
                 "file": {
+                    # 수정은 했는데 JSON 형식으로 로그 출력이 안되는 중
                     "class": "pythonjsonlogger.jsonlogger.JsonFormatter",
                     "datefmt": "%Y-%m-%dT%H:%M:%S",
-                    "format": "%(asctime)s %(msecs)03d %(levelname)-8s %(correlation_id)s %(name)s %(lineno)d  %(message)s",
+                    "format": "%(asctime)s %(msecs)03d %(levelname)-8s %(correlation_id)s %(name)s %(lineno)d %(message)s",
                 },
             },
             "handlers": {
