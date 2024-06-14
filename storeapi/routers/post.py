@@ -57,6 +57,7 @@ async def create_comment(comment: CommentIn):
 
     post = await find_post(comment.post_id)
     if not post:
+        logger.error(f"Post with id {comment.post_id} not found")
         raise HTTPException(status_code=404, detail="Post not found")
 
     data = comment.dict()
@@ -90,6 +91,7 @@ async def get_post_with_comments(post_id: int):
     logger.info("Getting post and its comments")
     post = await find_post(post_id)
     if not post:
+        logger.error(f"Post with post id {post_id} not found")
         raise HTTPException(status_code=404, detail="Post not found")
     return {
         "post": post,

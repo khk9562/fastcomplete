@@ -197,3 +197,18 @@ uvicorn.access:466 - 127.0.0.1:53508 - "POST /post HTTP/1.1" 200
 uvicorn.access:466 - 127.0.0.1:53508 - "GET /post HTTP/1.1" 200
 uvicorn.access:466 - 127.0.0.1:53508 - "GET /post/1 HTTP/1.1" 200
 uvicorn.access:466 - 127.0.0.1:53510 - "GET /post/0/comment HTTP/1.1" 200
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [72554]
+uvicorn.error:62 - Application startup complete.
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [74525]
+uvicorn.error:62 - Application startup complete.
+uvicorn.error:258 - Shutting down
+uvicorn.error:67 - Waiting for application shutdown.
+uvicorn.error:76 - Application shutdown complete.
+uvicorn.error:92 - Finished server process [74557]
+uvicorn.error:62 - Application startup complete.
